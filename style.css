@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    max-width: 1200px;
+    margin: auto;
+}
+/* common code end */
+/* navber start */
+nav{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 25px;
+    border-bottom: 1px solid#aaa;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+nav ul li a{
+    font-size: 14px;
+    font-weight: 600;
+    color:#222;
+    transition: 300ms;
+}
+nav ul li:hover> a{
+color: blue;
+
+
+}
+nav ul li .m{
+    position: absolute;
+    
+    
+    border: 1px solid #aaa;
+    border-top:1px solid#000 ;
+    margin: 20px;
+    opacity: 0;
+    visibility: hidden;
+    
+
+
+
+}
+nav ul li:hover .m{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+nav ul li .m li{
+    display: block;
+    background-color: lightblue;
+    width: 200px;
+    text-align:left;
+    border-bottom: 1px solid #aaa;
+    
+    
+}
+nav ul li .m li a{
+    display: block;
+    padding:20px ;
+    
+}
